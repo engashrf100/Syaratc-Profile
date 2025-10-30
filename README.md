@@ -17,7 +17,7 @@
 
 ## Overview
 
-Syaratc Online is a car marketplace and financing companion. The app connects users with curated car offers, financing partners, and company programs while delivering a smooth, localized experience. It mirrors the core capabilities available on the website (`https://syaratc.online/en`) and adds mobile‑first features like push notifications, offline‑first storage, and background token refresh.
+Syaratc Online is a car marketplace and financing companion. The app connects users with curated car offers, financing partners, and company programs while delivering a smooth, localized experience for both end‑users and companies. It mirrors the core capabilities available on the website (`https://syaratc.online/en`) and adds mobile‑first features like push notifications, offline‑first storage, and background token refresh.
 
 ### Project Pref
 
@@ -34,8 +34,10 @@ This repository hosts the app profile and demos only (no source code). Use this 
 | Networking | API handler with interceptors, pagination, and error mapping |
 | Auth | Token auth with OTP; secure refresh token in background; guest and authenticated flows |
 | UI/UX | Slivers for performant lists, skeleton loading, onboarding game/flow |
-| i18n | Double localization (e.g., Arabic/English) |
-| Notifications | Firebase Cloud Messaging + local notifications |
+| i18n | Double localization (Arabic and English) |
+| Notifications | Firebase Cloud Messaging + local notifications (new offers, order updates, company campaigns) |
+| Analytics | Firebase Analytics (events for conversion, OTP success, engagement) |
+| Dependency Injection | get_it / injectable |
 | Web Content | In‑app WebView for Terms and Conditions, Privacy |
 
 ## Screens & Features
@@ -44,12 +46,17 @@ This repository hosts the app profile and demos only (no source code). Use this 
 - **Auth**: login and signup, OTP verification, resend/refresh OTP
 - **Forgot Password**: password reset with secure flows
 - **Background Token Refresh**: silent refresh for both guest and authenticated sessions
+- **Onboarding Game**: playful onboarding flow that introduces features and increases activation
 - **Home**: brand search, featured products, performant sliver lists, skeleton loading
 - **Offers**: special/featured offers, filters, pagination
 - **Order/Form**: guided purchase order form with validation and autosave
 - **Companies Offers**: tailored programs for businesses
 - **User Profile**: profile view/edit, saved cars, preferences
 - **Drawer**: links to Terms & Conditions and Privacy via WebView
+
+## Screenshots
+
+Place screenshots here once available (recommended: 1242×2688 for portrait, with concise captions).
 
 ## Visual Architecture
 
@@ -64,26 +71,26 @@ Cross‑cutting: localization, error handling, analytics, notifications
 
 ## Demo Videos
 
-> All videos are stored locally in this repo under `assets/`. GitHub supports inline playback of `.mov`.
+> Inline playback with `.mp4` works reliably on GitHub.
 
 ### Home
-<video src="assets/home.mov" controls width="720"></video>
+<video src="assets/home.mp4" controls width="720"></video>
 
 ### Offers
-<video src="assets/OFFERS.mov" controls width="720"></video>
+<video src="assets/OFFERS.mp4" controls width="720"></video>
 
 ### Onboarding & Auth
-<video src="assets/onboarding+auth.mov" controls width="720"></video>
+<video src="assets/onboarding+auth.mp4" controls width="720"></video>
 
 ### Form & Drawer
-<video src="assets/FORM+DRAWER.mov" controls width="720"></video>
+<video src="assets/FORM+DRAWER.mp4" controls width="720"></video>
 
-If inline playback doesn’t appear, use these direct links:
+Direct links:
 
-- `assets/home.mov`
-- `assets/OFFERS.mov`
-- `assets/onboarding+auth.mov`
-- `assets/FORM+DRAWER.mov`
+- `assets/home.mp4`
+- `assets/OFFERS.mp4`
+- `assets/onboarding+auth.mp4`
+- `assets/FORM+DRAWER.mp4`
 
 ## Why Syaratc Online?
 
@@ -93,22 +100,7 @@ If inline playback doesn’t appear, use these direct links:
 - **Localization‑first** experience
 - **Engagement** via FCM + local notifications
 
-## Suggestions to Elevate Further
-
-- **Deep Links & App Links** for campaign and offer landing
-- **Performance Monitoring** with Firebase Performance and Crashlytics
-- **A/B Testing** for onboarding flow and conversion levers
-- **Offline‑first Caching** for offers and catalogs
-- **Accessibility** pass (text scaling, semantics, contrast)
-- **CI/CD** with automated build and store metadata sync
-
-## Open Questions (for kickoff)
-
-1. Do we need Apple App Store targets and review assets now or later?
-2. Preferred analytics stack (Firebase Analytics vs. alternative)? Events to track?
-3. Exact OTP provider and rate‑limit requirements?
-4. Supported locales beyond Arabic/English?
-5. API SLA and pagination window sizes for offers/catalogs?
+<!-- Suggestions and questions intentionally kept out of README for brevity and professionalism. -->
 
 ## Getting Started (Profile Repo)
 
