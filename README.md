@@ -9,19 +9,33 @@
   </p>
 
   <p>
+    <strong>Market:</strong> Saudi Arabia 🇸🇦 — Arabic & English experience
+  </p>
+
+  <p>
     <a href="https://syaratc.online/en"><img alt="Website" src="https://img.shields.io/badge/Website-syaratc.online-success?logo=google-chrome&logoColor=white"></a>
     <a href="https://play.google.com/store/apps/details?id=com.syatric.app"><img alt="Google Play" src="https://img.shields.io/badge/Google%20Play-com.syatric.app-3DDC84?logo=google-play&logoColor=white"></a>
+    <a href="https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?logo=google-drive&logoColor=white"></a>
   </p>
 
 </div>
 
 ## Overview
 
-Syaratc Online is a car marketplace and financing companion. The app connects users with curated car offers, financing partners, and company programs while delivering a smooth, localized experience for both end‑users and companies. It mirrors the core capabilities available on the website (`https://syaratc.online/en`) and adds mobile‑first features like push notifications, offline‑first storage, and background token refresh.
+Syaratc Online is a service that helps users find cars and secure financing — a car marketplace and financing companion. The app connects users with curated car offers, financing partners, and company programs while delivering a smooth, localized experience for both end‑users and companies. It mirrors the core capabilities available on the website (`https://syaratc.online/en`) and adds mobile‑first features like push notifications, offline‑first storage, and background token refresh.
+
+<details>
+  <summary><strong>نظرة عامة (Arabic)</strong></summary>
+  <p>
+    «سيراتك أونلاين» خدمة تساعد المستخدمين على الحصول على السيارة وتمويلها بسهولة — منصة لعرض السيارات وربطك بشركاء التمويل وإدارة طلباتك بسلاسة. التجربة مصممة لسوق المملكة العربية السعودية 🇸🇦 مع دعم كامل للغتين العربية والإنجليزية، إضافة إلى الإشعارات الفورية، الحفظ دون اتصال، وتحديث آمن للرموز في الخلفية.
+  </p>
+</details>
 
 ### Project Pref
 
 This repository hosts the app profile and demos only (no source code). Use this README on GitHub as a portfolio page to showcase product scope, technology choices, and videos.
+
+This project targets users in <strong>Saudi Arabia 🇸🇦</strong>, with Arabic as a first‑class locale and English as a secondary locale.
 
 ## Technologies
 
@@ -30,7 +44,7 @@ This repository hosts the app profile and demos only (no source code). Use this 
 | Language | Flutter, Dart |
 | State | BLoC (Cubit) |
 | Storage | Hive for local persistence |
-| Architecture | Clean Architecture (domain, data, presentation) |
+| Architecture | Clean Architecture (presentation + data, no separate domain layer) |
 | Networking | API handler with interceptors, pagination, and error mapping |
 | Auth | Token auth with OTP; secure refresh token in background; guest and authenticated flows |
 | UI/UX | Slivers for performant lists, skeleton loading, onboarding game/flow |
@@ -56,15 +70,48 @@ This repository hosts the app profile and demos only (no source code). Use this 
 
 ## Screenshots
 
-Place screenshots here once available (recommended: 1242×2688 for portrait, with concise captions).
+Chronological sequence (oldest → newest):
+
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.33.46 PM.png" alt="Screenshot 1 - 3:33:46 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.04 PM.png" alt="Screenshot 2 - 3:34:04 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.16 PM.png" alt="Screenshot 3 - 3:34:16 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.31 PM.png" alt="Screenshot 4 - 3:34:31 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.38 PM.png" alt="Screenshot 5 - 3:34:38 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.48 PM.png" alt="Screenshot 6 - 3:34:48 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.00 PM.png" alt="Screenshot 7 - 3:35:00 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.09 PM.png" alt="Screenshot 8 - 3:35:09 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.20 PM.png" alt="Screenshot 9 - 3:35:20 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.27 PM.png" alt="Screenshot 10 - 3:35:27 PM" width="360" />
+</p>
+<p>
+  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.36 PM.png" alt="Screenshot 11 - 3:35:36 PM" width="360" />
+</p>
 
 ## Visual Architecture
 
 ```
-App (Flutter)
-├─ presentation/        # Widgets, pages, BLoC cubits, UI state
-├─ domain/              # Entities, repositories (abstract), use‑cases
-└─ data/                # DTOs, mappers, Hive boxes, API clients/interceptors
+App (Flutter) — Clean Architecture (without separate domain layer to reduce boilerplate)
+├─ presentation/        # Widgets, pages, BLoC cubits, UI state, use‑cases live here
+└─ data/                # DTOs, mappers, Hive boxes, API clients/interceptors, repositories
 
 Cross‑cutting: localization, error handling, analytics, notifications
 ```
@@ -94,15 +141,16 @@ lib/
 ## Demos (GIF Previews)
 
 > Lightweight GIFs play inline on GitHub; click any image for full size.
+> Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo here: [Full demo video](https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing).
+
+### Onboarding Game (first‑run experience)
+<img src="assets/onboarding+auth.gif" alt="Onboarding Game and Auth demo" width="360" />
 
 ### Home
 <img src="assets/home.gif" alt="Home demo" width="360" />
 
 ### Offers
 <img src="assets/OFFERS.gif" alt="Offers demo" width="360" />
-
-### Onboarding & Auth
-<img src="assets/onboarding+auth.gif" alt="Onboarding & Auth demo" width="360" />
 
 ### Form & Drawer
 <img src="assets/FORM+DRAWER.gif" alt="Form & Drawer demo" width="360" />
@@ -111,22 +159,11 @@ Full video is also available on Google Drive:
 
 - [Watch full demo](https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing)
 
-## Why Syaratc Online?
+## Contact
 
-- **End‑to‑end flow** from discovery to financing
-- **Reliable performance** with slivers, pagination, and skeleton loading
-- **Production‑ready architecture** (testable, scalable)
-- **Localization‑first** experience
-- **Engagement** via FCM + local notifications
+- Email: <a href="mailto:eng.ashrf100@gmail.com?subject=Syaratc%20Online%20Inquiry">eng.ashrf100@gmail.com</a>
+- WhatsApp: <a href="https://wa.me/201287200535" target="_blank">Chat on WhatsApp</a>
 
 <!-- Suggestions and questions intentionally kept out of README for brevity and professionalism. -->
-
-## Getting Started (Profile Repo)
-
-This is a profile/portfolio repository containing assets and documentation only. If you want the full source code or a custom build, please reach out.
-
----
-
-Made with Flutter • © Syaratc Online
 
 
