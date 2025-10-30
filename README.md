@@ -67,23 +67,23 @@ This repository hosts the app profile and demos only (no source code). The produ
 
 <table>
   <tr>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.33.46 PM.png" alt="Screenshot 1" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.04 PM.png" alt="Screenshot 2" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.16 PM.png" alt="Screenshot 3" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.33.46-pm.png" alt="Screenshot 1" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.34.04-pm.png" alt="Screenshot 2" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.34.16-pm.png" alt="Screenshot 3" width="240" /></td>
   </tr>
   <tr>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.31 PM.png" alt="Screenshot 4" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.38 PM.png" alt="Screenshot 5" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.48 PM.png" alt="Screenshot 6" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.34.31-pm.png" alt="Screenshot 4" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.34.38-pm.png" alt="Screenshot 5" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.34.48-pm.png" alt="Screenshot 6" width="240" /></td>
   </tr>
   <tr>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.00 PM.png" alt="Screenshot 7" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.09 PM.png" alt="Screenshot 8" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.20 PM.png" alt="Screenshot 9" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.35.00-pm.png" alt="Screenshot 7" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.35.09-pm.png" alt="Screenshot 8" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.35.20-pm.png" alt="Screenshot 9" width="240" /></td>
   </tr>
   <tr>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.27 PM.png" alt="Screenshot 10" width="240" /></td>
-    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.36 PM.png" alt="Screenshot 11" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.35.27-pm.png" alt="Screenshot 10" width="240" /></td>
+    <td><img src="assets/images/screenshots/screenshot-2025-10-30-3.35.36-pm.png" alt="Screenshot 11" width="240" /></td>
     <td></td>
   </tr>
 </table>
@@ -126,16 +126,16 @@ lib/
 > Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo video here: [Full demo video](https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing).
 
 ### Onboarding Game (first‑run experience)
-<img src="assets/onboarding+auth.gif" alt="Onboarding Game and Auth demo" width="360" />
+<img src="assets/demos/onboarding-auth.gif" alt="Onboarding Game and Auth demo" width="360" />
 
 ### Home
-<img src="assets/home.gif" alt="Home demo" width="360" />
+<img src="assets/demos/home.gif" alt="Home demo" width="360" />
 
 ### Offers
-<img src="assets/OFFERS.gif" alt="Offers demo" width="360" />
+<img src="assets/demos/offers.gif" alt="Offers demo" width="360" />
 
 ### Form & Drawer
-<img src="assets/FORM+DRAWER.gif" alt="Form & Drawer demo" width="360" />
+<img src="assets/demos/form-and-drawer.gif" alt="Form & Drawer demo" width="360" />
 
 Full video is also available on Google Drive:
 
@@ -145,6 +145,7 @@ Full video is also available on Google Drive:
 
 - Email: <a href="mailto:eng.ashrf100@gmail.com?subject=Syaratc%20Online%20Inquiry">eng.ashrf100@gmail.com</a>
 - WhatsApp: <a href="https://wa.me/201287200535" target="_blank">Chat on WhatsApp</a>
+- Phone: <a href="tel:+201287200535">+20 128 720 0535</a>
 
 <!-- Suggestions and questions intentionally kept out of README for brevity and professionalism. -->
 
