@@ -69,28 +69,47 @@ App (Flutter)
 Cross‑cutting: localization, error handling, analytics, notifications
 ```
 
-## Demo Videos
+## Project Structure (planned)
 
-> Inline playback with `.mp4` works reliably on GitHub.
+```
+lib/
+├─ core/                      # app-wide building blocks
+│  ├─ di/                     # dependency injection (get_it/injectable)
+│  ├─ network/                # api client, interceptors, error mapping
+│  ├─ localization/           # i18n setup (ar, en)
+│  ├─ notifications/          # FCM + local notifications
+│  ├─ utils/                  # formatters, validators, shared helpers
+│  └─ widgets/                # reusable UI components
+└─ features/                  # vertical slices by business area
+   ├─ auth/                   # login, signup, otp, refresh
+   ├─ onboarding/             # onboarding game/flow
+   ├─ home/                   # brands, featured, skeletons
+   ├─ offers/                 # lists, filters, pagination
+   ├─ order/                  # order form, steps, validation
+   ├─ companies/              # company programs
+   ├─ profile/                # user profile
+   └─ legal/                  # terms & privacy (WebView)
+```
+
+## Demos (GIF Previews)
+
+> Lightweight GIFs play inline on GitHub; click any image for full size.
 
 ### Home
-<video src="assets/home.mp4" controls width="720"></video>
+<img src="assets/home.gif" alt="Home demo" width="360" />
 
 ### Offers
-<video src="assets/OFFERS.mp4" controls width="720"></video>
+<img src="assets/OFFERS.gif" alt="Offers demo" width="360" />
 
 ### Onboarding & Auth
-<video src="assets/onboarding+auth.mp4" controls width="720"></video>
+<img src="assets/onboarding+auth.gif" alt="Onboarding & Auth demo" width="360" />
 
 ### Form & Drawer
-<video src="assets/FORM+DRAWER.mp4" controls width="720"></video>
+<img src="assets/FORM+DRAWER.gif" alt="Form & Drawer demo" width="360" />
 
-Direct links:
+Full video is also available on Google Drive:
 
-- `assets/home.mp4`
-- `assets/OFFERS.mp4`
-- `assets/onboarding+auth.mp4`
-- `assets/FORM+DRAWER.mp4`
+- [Watch full demo](https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing)
 
 ## Why Syaratc Online?
 
