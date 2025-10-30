@@ -15,7 +15,7 @@
   <p>
     <a href="https://syaratc.online/en"><img alt="Website" src="https://img.shields.io/badge/Website-syaratc.online-success?logo=google-chrome&logoColor=white"></a>
     <a href="https://play.google.com/store/apps/details?id=com.syatric.app"><img alt="Google Play" src="https://img.shields.io/badge/Google%20Play-com.syatric.app-3DDC84?logo=google-play&logoColor=white"></a>
-    <a href="https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?logo=google-drive&logoColor=white"></a>
+    <a href="https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?logo=google-drive&logoColor=white"></a>
   </p>
 
 </div>
@@ -24,30 +24,25 @@
 
 Syaratc Online is a service that helps users find cars and secure financing — a car marketplace and financing companion. The app connects users with curated car offers, financing partners, and company programs while delivering a smooth, localized experience for both end‑users and companies. It mirrors the core capabilities available on the website (`https://syaratc.online/en`) and adds mobile‑first features like push notifications, offline‑first storage, and background token refresh.
 
-<details>
-  <summary><strong>نظرة عامة (Arabic)</strong></summary>
-  <p>
-    «سيراتك أونلاين» خدمة تساعد المستخدمين على الحصول على السيارة وتمويلها بسهولة — منصة لعرض السيارات وربطك بشركاء التمويل وإدارة طلباتك بسلاسة. التجربة مصممة لسوق المملكة العربية السعودية 🇸🇦 مع دعم كامل للغتين العربية والإنجليزية، إضافة إلى الإشعارات الفورية، الحفظ دون اتصال، وتحديث آمن للرموز في الخلفية.
-  </p>
-</details>
+This repository hosts the app profile and demos only (no source code). The product targets users in <strong>Saudi Arabia 🇸🇦</strong> with Arabic as a first‑class locale and English as a secondary locale.
 
-### Project Pref
-
-This repository hosts the app profile and demos only (no source code). Use this README on GitHub as a portfolio page to showcase product scope, technology choices, and videos.
-
-This project targets users in <strong>Saudi Arabia 🇸🇦</strong>, with Arabic as a first‑class locale and English as a secondary locale.
+<p>
+  <strong>نظرة عامة (Arabic):</strong>
+  «سيراتك أونلاين» خدمة تساعد المستخدمين على الحصول على السيارة وتمويلها بسهولة — منصة لعرض السيارات وربطك بشركاء التمويل وإدارة طلباتك بسلاسة. التجربة مصممة لسوق المملكة العربية السعودية 🇸🇦 مع دعم كامل للغتين العربية والإنجليزية، إضافة إلى الإشعارات الفورية، الحفظ دون اتصال، وتحديث آمن للرموز في الخلفية.
+</p>
 
 ## Technologies
 
 | Layer | Technology |
 |---|---|
 | Language | Flutter, Dart |
-| State | BLoC (Cubit) |
+| State | BLoC (Cubit), rxdart |
 | Storage | Hive for local persistence |
 | Architecture | Clean Architecture (presentation + data, no separate domain layer) |
-| Networking | API handler with interceptors, pagination, and error mapping |
-| Auth | Token auth with OTP; secure refresh token in background; guest and authenticated flows |
-| UI/UX | Slivers for performant lists, skeleton loading, onboarding game/flow |
+| Networking | dio + retrofit; API handler with interceptors, pagination, error mapping |
+| Serialization | json_serializable, freezed |
+| FP Utilities | dartz |
+| UI/UX | Slivers for performant lists, skeleton loading, onboarding game/flow, flutter_screenutil |
 | i18n | Double localization (Arabic and English) |
 | Notifications | Firebase Cloud Messaging + local notifications (new offers, order updates, company campaigns) |
 | Analytics | Firebase Analytics (events for conversion, OTP success, engagement) |
@@ -60,7 +55,7 @@ This project targets users in <strong>Saudi Arabia 🇸🇦</strong>, with Arabi
 - **Auth**: login and signup, OTP verification, resend/refresh OTP
 - **Forgot Password**: password reset with secure flows
 - **Background Token Refresh**: silent refresh for both guest and authenticated sessions
-- **Onboarding Game**: playful onboarding flow that introduces features and increases activation
+- **Onboarding Car Game**: interactive onboarding car game that engages users and increases activation
 - **Home**: brand search, featured products, performant sliver lists, skeleton loading
 - **Offers**: special/featured offers, filters, pagination
 - **Order/Form**: guided purchase order form with validation and autosave
@@ -70,41 +65,28 @@ This project targets users in <strong>Saudi Arabia 🇸🇦</strong>, with Arabi
 
 ## Screenshots
 
-Chronological sequence (oldest → newest):
-
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.33.46 PM.png" alt="Screenshot 1 - 3:33:46 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.04 PM.png" alt="Screenshot 2 - 3:34:04 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.16 PM.png" alt="Screenshot 3 - 3:34:16 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.31 PM.png" alt="Screenshot 4 - 3:34:31 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.38 PM.png" alt="Screenshot 5 - 3:34:38 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.48 PM.png" alt="Screenshot 6 - 3:34:48 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.00 PM.png" alt="Screenshot 7 - 3:35:00 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.09 PM.png" alt="Screenshot 8 - 3:35:09 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.20 PM.png" alt="Screenshot 9 - 3:35:20 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.27 PM.png" alt="Screenshot 10 - 3:35:27 PM" width="360" />
-</p>
-<p>
-  <img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.36 PM.png" alt="Screenshot 11 - 3:35:36 PM" width="360" />
-</p>
+<table>
+  <tr>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.33.46 PM.png" alt="Screenshot 1" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.04 PM.png" alt="Screenshot 2" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.16 PM.png" alt="Screenshot 3" width="240" /></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.31 PM.png" alt="Screenshot 4" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.38 PM.png" alt="Screenshot 5" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.34.48 PM.png" alt="Screenshot 6" width="240" /></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.00 PM.png" alt="Screenshot 7" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.09 PM.png" alt="Screenshot 8" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.20 PM.png" alt="Screenshot 9" width="240" /></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.27 PM.png" alt="Screenshot 10" width="240" /></td>
+    <td><img src="assets/images/screenshots/Screenshot 2025-10-30 at 3.35.36 PM.png" alt="Screenshot 11" width="240" /></td>
+    <td></td>
+  </tr>
+</table>
 
 ## Visual Architecture
 
@@ -141,7 +123,7 @@ lib/
 ## Demos (GIF Previews)
 
 > Lightweight GIFs play inline on GitHub; click any image for full size.
-> Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo here: [Full demo video](https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing).
+> Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo here: [Full demo video](https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing).
 
 ### Onboarding Game (first‑run experience)
 <img src="assets/onboarding+auth.gif" alt="Onboarding Game and Auth demo" width="360" />
@@ -157,7 +139,7 @@ lib/
 
 Full video is also available on Google Drive:
 
-- [Watch full demo](https://drive.google.com/file/d/17UQR6TMTeV9Ool-RF9koM8dw9yFTqBTI/view?usp=sharing)
+- [Watch full demo](https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing)
 
 ## Contact
 
