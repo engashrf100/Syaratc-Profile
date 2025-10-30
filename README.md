@@ -51,7 +51,7 @@ This repository hosts the app profile and demos only (no source code). The produ
 
 ## Screens & Features
 
-- **Splash**: cold‑start bootstrap, env/config probing, auth state restore
+- **Splash**: fast app startup and restoring user session
 - **Auth**: login and signup, OTP verification, resend/refresh OTP
 - **Forgot Password**: password reset with secure flows
 - **Background Token Refresh**: silent refresh for both guest and authenticated sessions
@@ -123,7 +123,7 @@ lib/
 ## Demos (GIF Previews)
 
 > Lightweight GIFs play inline on GitHub; click any image for full size.
-> Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo here: [Full demo video](https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing).
+> Hint: GIF previews may take a second to load — please wait for the loading indicator. If playback is choppy, watch the full demo video here: [Full demo video](https://drive.google.com/file/d/1nF3FgbEGtSoubXAKsBPIOG4G5JTtZlUg/view?usp=sharing).
 
 ### Onboarding Game (first‑run experience)
 <img src="assets/onboarding+auth.gif" alt="Onboarding Game and Auth demo" width="360" />
