@@ -1,3 +1,14 @@
+# Flutter Profiles
+
+This repository now aggregates multiple Flutter product profile sites for portfolio use.
+
+## Projects
+
+- `syaratc/` – Syaratc Online (car marketplace & financing companion). Contains its own `README.md` and assets.
+- `nawah/` – Nawah product showcase (assets and README maintained inside the directory).
+
+Add new Flutter profiles by creating folders at the root, storing their media inside each folder, and referencing them from this README.
+
 <div align="center">
 
   <img src="assets/images/app_icon.jpg" alt="Syaratc Online" width="140" height="140" />
