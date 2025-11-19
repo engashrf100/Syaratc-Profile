@@ -8,11 +8,9 @@
     A modern Flutter healthcare platform for consultations, branch discovery, and service booking across MENA.
   </p>
 
-  <p>
-    <strong>Status:</strong>
-  </p>
   <div align="center">
-    <progress value="75" max="100"></progress>
+    <label for="status-slider"><strong>Status:</strong> 75% complete</label><br/>
+    <input id="status-slider" type="range" min="0" max="100" value="75" disabled style="width:260px;">
     <p>QA team validating finished features · Dev team finalizing social login, multi-payment booking, Google Maps branches</p>
   </div>
 
@@ -22,6 +20,12 @@
     <img src="https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-lightgrey" alt="Platforms" />
     <img src="https://img.shields.io/badge/Architecture-Clean-blue" alt="Architecture" />
     <img src="https://img.shields.io/badge/State-BLoC-green" alt="State" />
+  </p>
+
+  <p>
+    <a href="https://drive.google.com/file/d/1Kdtn28umpEsDeh-1nc50BrNpOLBvRk8u/view?usp=sharing">
+      <img src="https://img.shields.io/badge/▶%20Watch%20Full%20Demo-Google%20Drive-red?logo=google-drive&logoColor=white" alt="Watch full demo video" height="40" />
+    </a>
   </p>
 
 </div>
@@ -35,6 +39,8 @@ Nawah is the official mobile companion for a multi-branch medical center network
 - Coverage: Consultations, services, branch locator with Google Maps, history, profile, notifications, settings
 - Team: Product manager, UI/UX designer, PHP/Laravel backend team, Flutter engineer (me)
 
+<p><strong>نظرة عامة مبسطة:</strong> التطبيق يخدم مراكز طبية متعددة الفروع داخل مصر مع توسع للدوحة والرياض. المستخدم يقدر يحجز خدمات، يتابع الاستشارات، ويستقبل إشعارات بالعربي أو الإنجليزي عبر تصميم مطابق للواجهات المعتمدة.</p>
+
 ## Status & Roadmap
 
   - ✅ Core flows: authentication, consultations, services, branches, notifications, localization
@@ -42,18 +48,17 @@ Nawah is the official mobile companion for a multi-branch medical center network
 - 🚧 In progress: Booking & payments (multiple PSP environments), social auth, analytics events
 - 🔜 Next: Rich booking summary, Apple Sign-In, provider-side messaging, App Store submission
 
+<p><strong>الحالة الحالية بالعربي:</strong> انتهينا من أغلب المزايا (تسجيل الدخول، الخدمات، الفروع). فريق الـQA يختبر، وفريق التطوير يضيف الدفع المتعدد وخريطة الفروع والـSocial Login. بعد ذلك هنجهز لإطلاق المتاجر.</p>
+
 ## Visual Storyboard
 
 <table>
   <tr>
-    <td><img src="assets/images/headers/header-1.png" alt="Hero 1" width="220" /></td>
-    <td><img src="assets/images/headers/header-2.png" alt="Hero 2" width="220" /></td>
-    <td><img src="assets/images/headers/header-3.png" alt="Hero 3" width="220" /></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/headers/header-4.png" alt="Hero 4" width="220" /></td>
-    <td><img src="assets/images/headers/header-5.png" alt="Hero 5" width="220" /></td>
-    <td></td>
+    <td><img src="assets/images/headers/header-1.png" alt="Hero 1" width="200" /></td>
+    <td><img src="assets/images/headers/header-2.png" alt="Hero 2" width="200" /></td>
+    <td><img src="assets/images/headers/header-3.png" alt="Hero 3" width="200" /></td>
+    <td><img src="assets/images/headers/header-4.png" alt="Hero 4" width="200" /></td>
+    <td><img src="assets/images/headers/header-5.png" alt="Hero 5" width="200" /></td>
   </tr>
 </table>
 
@@ -175,12 +180,13 @@ lib/
 
 ## Demos (GIF Previews)
 
-> Tip: GIFs may take a moment to load. If playback is slow, open them directly from the repo under `assets/demos/gifs/`.
+> ⏳ **Heads up:** GIFs may take a moment to load. If playback is slow, open them directly from the repo under `assets/demos/gifs/`.
 >
 > Full walkthrough videos are stored alongside the repo assets. Download as needed:
 > - [Main navigation demo (MOV)](assets/demos/raw/main-screens.mov)
 > - [Services carousel (MOV)](assets/demos/raw/services.mov)
 > - [Consultations demo (MOV)](assets/demos/raw/consultant.mov)
+> - [Full app walkthrough (Google Drive)](https://drive.google.com/file/d/1Kdtn28umpEsDeh-1nc50BrNpOLBvRk8u/view?usp=sharing)
 
 ### Onboarding
 <img src="assets/demos/gifs/onboarding.gif" alt="Onboarding demo" width="360" />
