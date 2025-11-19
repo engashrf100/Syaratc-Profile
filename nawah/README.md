@@ -48,7 +48,7 @@ Nawah is the official mobile companion for a multi-branch medical center network
 - 🚧 In progress: Booking & payments (multiple PSP environments), social auth, analytics events
 - 🔜 Next: Rich booking summary, Apple Sign-In, provider-side messaging, App Store submission
 
-<p><strong>الحالة الحالية بالعربي:</strong> انتهينا من أغلب المزايا (تسجيل الدخول، الخدمات، الفروع). فريق الـQA يختبر، وفريق التطوير يضيف الدفع المتعدد وخريطة الفروع والـSocial Login. بعد ذلك هنجهز لإطلاق المتاجر.</p>
+<p><strong>الحالة الحالية :</strong> انتهينا من أغلب المزايا (تسجيل الدخول، الخدمات، الفروع). فريق الـQA يختبر، وفريق التطوير يضيف الدفع المتعدد وخريطة الفروع والـSocial Login. بعد ذلك هنجهز لإطلاق المتاجر.</p>
 
 ## Visual Storyboard
 
@@ -182,32 +182,87 @@ lib/
 
 > ⏳ **Heads up:** GIFs may take a moment to load. If playback is slow, open them directly from the repo under `assets/demos/gifs/`.
 >
-> Full walkthrough videos are stored alongside the repo assets. Download as needed:
-> - [Main navigation demo (MOV)](assets/demos/raw/main-screens.mov)
-> - [Services carousel (MOV)](assets/demos/raw/services.mov)
-> - [Consultations demo (MOV)](assets/demos/raw/consultant.mov)
-> - [Full app walkthrough (Google Drive)](https://drive.google.com/file/d/1Kdtn28umpEsDeh-1nc50BrNpOLBvRk8u/view?usp=sharing)
 
-### Onboarding
-<img src="assets/demos/gifs/onboarding.gif" alt="Onboarding demo" width="360" />
+<p align="center">
+  <a href="https://drive.google.com/file/d/1Kdtn28umpEsDeh-1nc50BrNpOLBvRk8u/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/▶%20Watch%20Full%20App%20Walkthrough-Google%20Drive-red?logo=google-drive&logoColor=white" alt="Full app walkthrough" height="56" />
+  </a>
+</p>
 
-### Main Navigation
-<img src="assets/demos/gifs/main-screens.gif" alt="Main screens demo" width="360" />
-
-### Consultations & Services
-<img src="assets/demos/gifs/consultant.gif" alt="Consultation demo" width="360" />
-
-### Branches & Services
-<img src="assets/demos/gifs/branches-and-branch.gif" alt="Branches demo" width="360" />
-
-### Auth Flow
-<img src="assets/demos/gifs/auth.gif" alt="Auth demo" width="360" />
-
-### Settings & Localization
-<img src="assets/demos/gifs/settings.gif" alt="Settings demo" width="360" />
-
-### Services Carousel
-<img src="assets/demos/gifs/services.gif" alt="Services demo" width="360" />
+<table>
+  <tr>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/onboarding.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Onboarding GIF</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/main-screens.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Main Navigation</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/consultant.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Consultations & Services</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/branches-and-branch.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Branches & Services</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/auth.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Auth Flow</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/settings.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Settings & Localization</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="width:320px;height:200px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;display:flex;align-items:center;justify-content:center;">
+        <a href="assets/demos/gifs/services.gif" target="_blank" style="text-decoration:none;text-align:center;color:#0f172a;">
+          <div style="font-size:42px;">▶</div>
+          <div><strong>Services Carousel</strong></div>
+          <div style="font-size:12px;color:#475569;">Tap to open full animation</div>
+        </a>
+      </div>
+    </td>
+    <td></td>
+  </tr>
+</table>
 
 ## Contact
 
@@ -215,6 +270,3 @@ lib/
 - WhatsApp: <a href="https://wa.me/201287200535" target="_blank">+20 128 720 0535</a>
 - Phone: <a href="tel:+201287200535">+20 128 720 0535</a>
 
----
-
-Nawah sits alongside other Flutter portfolio entries in this repository. Add new assets or update screenshots by dropping media into `assets/` and referencing them here for a clean, repeatable presentation.
