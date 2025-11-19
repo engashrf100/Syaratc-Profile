@@ -9,8 +9,12 @@
   </p>
 
   <p>
-    <strong>Status:</strong> 75% complete · QA & regression testing · Booking with multi-payment + social auth in progress
+    <strong>Status:</strong>
   </p>
+  <div align="center">
+    <progress value="75" max="100"></progress>
+    <p>QA team validating finished features · Dev team finalizing social login, multi-payment booking, Google Maps branches</p>
+  </div>
 
   <p>
     <img src="https://img.shields.io/badge/Flutter-3.8+-02569B?logo=flutter&logoColor=white" alt="Flutter" />
@@ -24,18 +28,34 @@
 
 ## Overview
 
-Nawah is a healthcare consultation companion that connects patients with clinics, branches, and specialists. The app delivers bilingual (Arabic/English) experiences, secure consultations with media attachments, dynamic branch/doctor availability, and targeted notifications for offers or follow-ups. The current build mirrors real production scope while we finish QA, add "Book Now" with multi-payment environments, and enable social authentication for faster onboarding.
+Nawah is the official mobile companion for a multi-branch medical center network operating across Egyptian governorates with new franchises launching in Qatar and Saudi Arabia. Patients discover clinics, book services, follow up on consultations, and receive proactive care journeys inside one bilingual (Arabic/English) experience that mirrors the organization’s custom Figma design system.
 
-- Target markets: Egypt · Saudi Arabia · GCC
-- Deployment: Android first, iOS build under the same codebase
-- Coverage: Consultations, services, branch locator, history, profile, notifications, settings
+- Target markets: 🇪🇬 Egypt · 🇶🇦 Qatar · 🇸🇦 Saudi Arabia
+- Deployment: Android first, iOS build on the same Flutter codebase
+- Coverage: Consultations, services, branch locator with Google Maps, history, profile, notifications, settings
+- Team: Product manager, UI/UX designer, PHP/Laravel backend team, Flutter engineer (me)
 
 ## Status & Roadmap
 
-- ✅ Core flows: authentication, consultations, services, branches, notifications, localization
+  - ✅ Core flows: authentication, consultations, services, branches, notifications, localization
 - ✅ Internal QA + beta testing (75% of backlog closed)
 - 🚧 In progress: Booking & payments (multiple PSP environments), social auth, analytics events
 - 🔜 Next: Rich booking summary, Apple Sign-In, provider-side messaging, App Store submission
+
+## Visual Storyboard
+
+<table>
+  <tr>
+    <td><img src="assets/images/headers/header-1.png" alt="Hero 1" width="220" /></td>
+    <td><img src="assets/images/headers/header-2.png" alt="Hero 2" width="220" /></td>
+    <td><img src="assets/images/headers/header-3.png" alt="Hero 3" width="220" /></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/headers/header-4.png" alt="Hero 4" width="220" /></td>
+    <td><img src="assets/images/headers/header-5.png" alt="Hero 5" width="220" /></td>
+    <td></td>
+  </tr>
+</table>
 
 ## Technologies
 
@@ -43,45 +63,53 @@ Nawah is a healthcare consultation companion that connects patients with clinics
 |---|---|
 | Language | Flutter, Dart |
 | State | BLoC (flutter_bloc), Cubits, rxdart |
-| Architecture | Clean Architecture (presentation · domain · data) |
+| Architecture | Clean Architecture (presentation + data only — domain layer skipped to reduce boilerplate) |
 | Networking | dio + retrofit + interceptors, connectivity_plus |
+| Backend | REST APIs powered by Laravel/PHP |
 | Serialization | freezed, json_serializable, build_runner |
 | Storage & Security | flutter_secure_storage, shared_preferences |
-| UI/UX | Material 3 theming, flutter_screenutil, shimmer, cached_network_image, custom hero flows |
+| UI/UX | Material 3 theming, custom Figma design system, dark & light themes, flutter_screenutil |
+| Animations | Hero transitions, custom loaders, micro-interactions highlighting Flutter’s rendering power |
 | Notifications | Firebase Cloud Messaging, flutter_local_notifications, timezone |
 | Localization | easy_localization (AR/EN, RTL) |
-| Analytics & Logging | Firebase Analytics events, pretty_dio_logger |
-| Dependency Injection | get_it / injectable style service locator |
+| Analytics & Observability | Firebase Analytics events, Sentry, pretty_dio_logger |
+| Dependency Injection | get_it / injectable-style service locator |
 
 ## Screens & Features
 
-- **Splash & Session Restore**: Fast boot, env detection, token refresh, biometric resume
-- **Auth**: OTP login/signup, password reset, biometric unlock, (Social auth coming in QA sprint)
-- **Consultations**: Attach medical notes/photos, track status, receive responses
-- **Services Catalog**: Filtered services with pricing, duration, and prerequisites
-- **Branch Finder**: Live branch availability, working hours, map & directions
-- **Booking (WIP)**: Pay-now & pay-later options, multi PSP environments, promo codes
+- **Splash & Onboarding**: Branded splash, user walkthrough, environment probing, quick-start carousel
+- **Language & Theme Picker**: Dual-language (AR/EN) selector plus live dark/light toggle synced with Figma design tokens
+- **Auth**: OTP login/signup, password reset, biometric unlock, social login landing this sprint
+- **Consultations**: Attach notes/photos, follow statuses, receive responses, history export
+- **Services Catalog**: Filtered services with pricing, duration, prerequisites, booking hooks
+- **Branch Finder**: Live availability with Google Maps, working hours, directions, campaigns
+- **Booking (WIP)**: Pay-now/pay-later, multi-payment environments, promo codes, receipts
 - **Notifications**: Deep-linked push topics for offers, consultation updates, system alerts
-- **Profile & Settings**: Preferences, language switch (instant RTL), security controls
-- **System Reliability**: Offline awareness, retry logic, structured error surfaces
+- **Profile & Settings**: Preferences, security controls, language/theme switch, privacy/legal
+- **System Reliability**: Offline awareness, retry logic, structured error surfaces, Sentry logging
 
 ## Highlights
 
-- Clean Architecture separation + feature-first folders for scalability
-- Enterprise-grade session & token management with auto-refresh + secure storage
-- Modern UX touches: hero motions, skeleton states, shimmer, custom loaders
-- Deep localization: Arabic-first typography, mirrored layouts, localized notifications
-- QA-ready: logging, analytics hooks, remote config toggles for staged rollouts
+- **Production architecture**: Feature-first Clean Architecture, GetIt DI, Retrofit APIs, seamless hand-off with Laravel backend.
+- **Secure sessions**: Token refresh, biometric unlock, secure storage, offline awareness, Sentry logging for QA.
+- **Custom Figma fidelity**: Dark/light themes, hero animations, shimmer/skeleton states, smooth transitions built with Flutter.
+- **Localization excellence**: Arabic-first typography, mirroring, localized notifications, instant AR/EN toggle.
+- **Deployment ready**: Remote config toggles, analytics hooks, QA regression scripts, multi-environment payment rollout plan.
 
 ## Visual Architecture
 
 ```
-App (Flutter) — Clean Architecture (presentation · domain · data)
-├─ presentation/   # widgets, pages, cubits, UI logic
-├─ domain/         # entities, repositories contracts, use-cases
-└─ data/           # DTOs, retrofit clients, mappers, local persistence
+App (Flutter) — Clean Architecture (presentation · data)
+├─ presentation/
+│   ├─ cubits/blocs       # state holders per feature
+│   ├─ pages/widgets      # screens, components, theming hooks
+│   └─ routing            # shell navigation, deep links
+└─ data/
+    ├─ repositories       # implementations for services/consultations/branches
+    ├─ network            # dio factory, interceptors, retrofit clients
+    └─ local              # secure storage, preferences, cached payloads
 
-Cross-cutting: localization, analytics, notifications, payments, error handling
+Cross-cutting: localization, analytics/Sentry, notifications, payment adapters, error handling
 ```
 
 ## Project Structure (planned)
@@ -109,21 +137,6 @@ lib/
 ├─ injection_container.dart # GetIt bootstrapping
 └─ main.dart                # entry point
 ```
-
-## Hero Imagery
-
-<table>
-  <tr>
-    <td><img src="assets/images/headers/header-1.png" alt="Hero 1" width="220" /></td>
-    <td><img src="assets/images/headers/header-2.png" alt="Hero 2" width="220" /></td>
-    <td><img src="assets/images/headers/header-3.png" alt="Hero 3" width="220" /></td>
-  </tr>
-  <tr>
-    <td><img src="assets/images/headers/header-4.png" alt="Hero 4" width="220" /></td>
-    <td><img src="assets/images/headers/header-5.png" alt="Hero 5" width="220" /></td>
-    <td></td>
-  </tr>
-</table>
 
 ## Screenshots
 
@@ -163,6 +176,11 @@ lib/
 ## Demos (GIF Previews)
 
 > Tip: GIFs may take a moment to load. If playback is slow, open them directly from the repo under `assets/demos/gifs/`.
+>
+> Full walkthrough videos are stored alongside the repo assets. Download as needed:
+> - [Main navigation demo (MOV)](assets/demos/raw/main-screens.mov)
+> - [Services carousel (MOV)](assets/demos/raw/services.mov)
+> - [Consultations demo (MOV)](assets/demos/raw/consultant.mov)
 
 ### Onboarding
 <img src="assets/demos/gifs/onboarding.gif" alt="Onboarding demo" width="360" />
