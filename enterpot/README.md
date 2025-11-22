@@ -11,7 +11,12 @@
   <p>
     <a href="https://play.google.com/store/apps/details?id=com.newenterpot.app"><img alt="Google Play" src="https://img.shields.io/badge/Google%20Play-com.newenterpot.app-3DDC84?logo=google-play&logoColor=white"></a>
     <a href="https://apps.apple.com/app/id6451003683"><img alt="App Store" src="https://img.shields.io/badge/App%20Store-Enterpot-0D96F6?logo=app-store&logoColor=white"></a>
+    <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?logo=google-drive&logoColor=white"></a>
     <img src="https://img.shields.io/badge/Status-Production-success" alt="Status" />
+  </p>
+
+  <p>
+    <strong>📥 Download:</strong> <a href="https://play.google.com/store/apps/details?id=com.newenterpot.app">Google Play</a> · <a href="https://apps.apple.com/app/id6451003683">App Store</a>
   </p>
 
   <p>
@@ -25,6 +30,12 @@
 </div>
 
 ## Overview
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/🎬%20Watch%20Full%20App%20Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Full Demo" />
+  </a>
+</p>
 
 Enterpot is a production-ready B2B wholesale food distribution platform serving retail traders across Saudi Arabia. The app enables bulk purchasing, real-time order tracking, dual user experiences (clients and delivery personnel), and seamless payment processing through ClickPay. Built with Flutter and a .NET backend, it delivers enterprise-grade features including Google Maps integration, SQLite-based offline cart management, and comprehensive notification systems.
 
@@ -57,8 +68,7 @@ Enterpot is a production-ready B2B wholesale food distribution platform serving 
 | Maps & Location | Google Maps Flutter, Geolocator, real-time tracking (15s updates) |
 | Notifications | Firebase Cloud Messaging, Flutter Local Notifications |
 | Payments | WebView-based ClickPay integration |
-| UI/UX | Material Design, Carousel Slider, Shimmer, Cached Network Image |
-| Localization | Intl package, full RTL support for Arabic |
+| Localization | Arabic (RTL) & English (LTR), Intl package |
 | Analytics | Firebase Analytics |
 
 ## Screens & Features
@@ -145,6 +155,12 @@ lib/
 > ⏳ **Heads up:** GIFs may take a moment to load. If playback is slow, open them directly from the repo under `assets/demos/gifs/`.
 
 <p align="center">
+  <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing" target="_blank" style="display: inline-block; margin: 16px;">
+    <img src="https://img.shields.io/badge/🎬%20Watch%20Full%20App%20Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Full Demo" />
+  </a>
+</p>
+
+<p align="center">
   <a href="assets/demos/gifs/demo.gif" target="_blank">
     <img src="assets/demos/gifs/demo.gif" alt="Full App Demo" width="360" style="border: 2px solid #e2e8f0; border-radius: 8px; padding: 8px; background: #f8fafc;" />
   </a>
@@ -155,10 +171,4 @@ lib/
 - Email: <a href="mailto:eng.ashrf100@gmail.com?subject=Enterpot%20Inquiry">eng.ashrf100@gmail.com</a>
 - WhatsApp: <a href="https://wa.me/201287200535" target="_blank">+20 128 720 0535</a>
 - Phone: <a href="tel:+201287200535">+20 128 720 0535</a>
-
----
-
-**Download Links:**
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.newenterpot.app)
-- [Apple App Store](https://apps.apple.com/app/id6451003683)
 
