@@ -46,7 +46,7 @@ Enterpot is a production-ready B2B wholesale food distribution platform serving 
 - **Business Model**: B2B wholesale e-commerce for food products
 - **Users**: Retail traders (clients) and delivery personnel
 - **Languages**: Arabic (RTL) & English (LTR)
-- **Backend**: .NET RESTful API (`https://enterpot.net/api`)
+- **Backend**: .NET RESTful API
 
 <p><strong>نظرة عامة:</strong> منصة تجارة إلكترونية للجملة تربط الموردين بتجار التجزئة في السعودية. التطبيق يدعم الشراء بالجملة، تتبع الطلبات، نظام دفع ClickPay، وخريطة Google Maps للفروع والتوصيل.</p>
 
@@ -174,4 +174,23 @@ lib/
 - Email: <a href="mailto:eng.ashrf100@gmail.com?subject=Enterpot%20Inquiry">eng.ashrf100@gmail.com</a>
 - WhatsApp: <a href="https://wa.me/201287200535" target="_blank">+20 128 720 0535</a>
 - Phone: <a href="tel:+201287200535">+20 128 720 0535</a>
+
+---
+
+## Tech Stack & Platforms
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" width="120" height="40" />
+<img src="https://img.shields.io/badge/GetX-FF6B00?style=for-the-badge&logo=flutter&logoColor=white" alt="GetX" width="120" height="40" />
+<img src="https://img.shields.io/badge/MVVM-512BD4?style=for-the-badge&logo=.net&logoColor=white" alt="MVVM" width="120" height="40" />
+<img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=.net&logoColor=white" alt=".NET" width="120" height="40" />
+<img src="https://img.shields.io/badge/Google%20Maps-4285F4?style=for-the-badge&logo=google-maps&logoColor=white" alt="Google Maps" width="120" height="40" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" width="120" height="40" />
+<img src="https://img.shields.io/badge/ClickPay-FF6B00?style=for-the-badge&logo=visa&logoColor=white" alt="ClickPay" width="120" height="40" />
+<img src="https://img.shields.io/badge/B2B-FF6B00?style=for-the-badge&logo=business&logoColor=white" alt="B2B" width="120" height="40" />
+<img src="https://img.shields.io/badge/Google%20Play-414141?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" width="120" height="40" />
+<img src="https://img.shields.io/badge/App%20Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white" alt="App Store" width="120" height="40" />
+
+</div>
 
