@@ -34,11 +34,7 @@
 
 ## Overview
 
-<p align="center">
-  <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing" target="_blank">
-    <img src="https://img.shields.io/badge/🎬%20Watch%20Full%20App%20Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Full Demo" />
-  </a>
-</p>
+
 
 Enterpot is a production-ready B2B wholesale food distribution platform serving retail traders across Saudi Arabia. The app enables bulk purchasing, real-time order tracking, dual user experiences (clients and delivery personnel), and seamless payment processing through ClickPay. Built with Flutter and a .NET backend, it delivers enterprise-grade features including Google Maps integration, SQLite-based offline cart management, and comprehensive notification systems.
 
