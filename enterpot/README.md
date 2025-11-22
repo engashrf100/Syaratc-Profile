@@ -165,14 +165,26 @@ lib/
   </a>
 </p>
 
+## Team & Company
+
+This project was developed by **Direct Choice** ([dco.sa](https://www.dco.sa/)), an IT services establishment specializing in digital platforms for corporations.
+
+### Development Team
+- **2 Flutter Developers**: Mobile app development and implementation
+- **1 Backend Developer**: .NET RESTful API development and integration
+- **1 UI/UX Designer**: User interface design and user experience optimization
+- **1 Account Owner**: Project management and client coordination
+
+Direct Choice provides comprehensive IT services including brand identity, web design & development, Microsoft Cloud Solutions (Office 365, Azure), and enterprise software solutions.
+
+<p><strong>الفريق والشركة:</strong> تم تطوير هذا المشروع بواسطة <strong>Direct Choice</strong>، مؤسسة متخصصة في خدمات تكنولوجيا المعلومات والمنصات الرقمية للشركات. الفريق يتكون من مطورين Flutter، مطور Backend، مصمم UI/UX، ومدير حساب.</p>
+
+---
+
 ## Contact
 
 - Email: <a href="mailto:eng.ashrf100@gmail.com?subject=Enterpot%20Inquiry">eng.ashrf100@gmail.com</a>
 - WhatsApp: <a href="https://wa.me/201287200535" target="_blank">+20 128 720 0535</a>
 - Phone: <a href="tel:+201287200535">+20 128 720 0535</a>
-
----
-
-
-</div>
+- **Company Website**: <a href="https://www.dco.sa/" target="_blank">Direct Choice (DCO)</a>
 
