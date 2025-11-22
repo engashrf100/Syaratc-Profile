@@ -2,6 +2,15 @@
 
   <img src="assets/images/logo/logo.png" alt="Enterpot" width="140" height="140" />
 
+  <p>
+    <a href="https://play.google.com/store/apps/details?id=com.newenterpot.app" target="_blank">
+      <img alt="Get it on Google Play" src="https://img.shields.io/badge/Get%20it%20on-Google%20Play-3DDC84?style=for-the-badge&logo=google-play&logoColor=white" height="60" />
+    </a>
+    <a href="https://apps.apple.com/app/id6451003683" target="_blank">
+      <img alt="Download on the App Store" src="https://img.shields.io/badge/Download%20on-the%20App%20Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white" height="60" />
+    </a>
+  </p>
+
   <h1>Enterpot</h1>
 
   <p>
@@ -9,14 +18,8 @@
   </p>
 
   <p>
-    <a href="https://play.google.com/store/apps/details?id=com.newenterpot.app"><img alt="Google Play" src="https://img.shields.io/badge/Google%20Play-com.newenterpot.app-3DDC84?logo=google-play&logoColor=white"></a>
-    <a href="https://apps.apple.com/app/id6451003683"><img alt="App Store" src="https://img.shields.io/badge/App%20Store-Enterpot-0D96F6?logo=app-store&logoColor=white"></a>
-    <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?logo=google-drive&logoColor=white"></a>
-    <img src="https://img.shields.io/badge/Status-Production-success" alt="Status" />
-  </p>
-
-  <p>
-    <strong>📥 Download:</strong> <a href="https://play.google.com/store/apps/details?id=com.newenterpot.app">Google Play</a> · <a href="https://apps.apple.com/app/id6451003683">App Store</a>
+    <img src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge" alt="Status" />
+    <a href="https://drive.google.com/file/d/1RCW1TXXOjuq6XVyr-lq9S-q4uxo72rmF/view?usp=sharing" target="_blank"><img alt="Demo Video" src="https://img.shields.io/badge/Demo-Video-blue?style=for-the-badge&logo=google-drive&logoColor=white"></a>
   </p>
 
   <p>
